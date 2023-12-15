@@ -1,0 +1,48 @@
+site_name: Zero to Mastery Data Science and Machine Learning Bootcamp
+site_description: Learn the fundamentals of machine learning and data science with Python via hands-on coding tutorials.
+
+repo_url: https://github.com/mrdbourke/zero-to-mastery-ml
+repo_name: mrdbourke/zero-to-mastery-ml
+
+nav:
+  - Home: "index.md"
+  - Getting Ready for ML Projects: "a-6-step-framework-for-approaching-machine-learning-projects.md"
+  - Introduction to NumPy: "introduction-to-numpy.ipynb"
+  - Introduction to pandas: "introduction-to-pandas.ipynb"
+  - Introduction to Matplotlib: "introduction-to-matplotlib.ipynb"
+  - Introduction to Scikit-Learn: "introduction-to-scikit-learn.ipynb"
+  - Introduction to TensorFlow: "end-to-end-dog-vision-v2.ipynb"
+  - Communicating your work: "communicating-your-work.md"
+
+plugins:
+  - mkdocs-jupyter:
+      ignore_h1_titles: True
+      # include_source: True
+  - search
+  # - social # this will break without cairosvg and pillow installed locally
+
+theme:
+  name: material
+  # logo: assets/ztm-logo-and-pytorch-logo.png
+  # favicon: assets/ztm-logo-and-pytorch-logo.png
+  features:
+    - navigation.instant
+    - navigation.top
+  palette:
+    primary: black
+
+markdown_extensions:
+  - meta
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/mrdbourke
+    - icon: fontawesome/brands/github
+      link: https://github.com/mrdbourke/zero-to-mastery-ml
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCr8O8l5cCX85Oem1d18EezQ
